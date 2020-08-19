@@ -1,0 +1,82 @@
+*,
+*:before,
+*:after {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* background: linear-gradient(to right, rgb(4, 188, 212), rgb(49, 255, 111)) */
+}
+
+.search-container {
+    background: rgb(223, 245, 236);
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    height: fit-content;
+    margin: 100px auto;
+    border-radius: 10px;
+    box-shadow: 10px 20px 40px #111;
+    overflow: hidden;
+}
+
+.header {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    background: rgb(100, 255, 173);
+    border-bottom: 3px solid #fff;
+}
+
+.header>h1 {
+    color: rgb(0, 158, 250);
+    font-size: 2.5rem;
+    margin-left: 25px;
+    border-radius: 10px;
+
+}
+
+.search-panel {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(100, 255, 173);
+}
+
+.search-btn {
+    width: 140px;
+    height: 45px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background: rgb(0, 158, 250);
+    font-size: 1.3rem;
+    font-weight: bold;
+    transition: all 0.3s;
+    color: #fff;
+}
+
+.search-btn:hover {
+    background: rgb(79, 189, 253);
+}
+
+.search-input {
+    height: 45px;
+    width: 300px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    padding-left: 10px;
+    margin-right: 10px;
+
+}
+
+.search-input:focus {
+    outline: 1px solid rgb(4, 235, 62);
+}
