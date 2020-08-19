@@ -9,11 +9,12 @@ class App extends Component {
   };
   handleInput = (event) => {
     event.preventDefault();
-    const input = document.querySelector(".search-input");
+    this.fetchJsonData();
+    /* const input = document.querySelector(".search-input");
     const inputValue = input.value;
     this.setState({ query: inputValue }, () => {
       this.fetchJsonData();
-    });
+    }); */
   };
   fetchJsonData = () => {
     fetch("https://jsonplaceholder.typicode.com/users")
@@ -32,13 +33,10 @@ class App extends Component {
               className="search-input"
               type="text"
               name="search-value"
+              onChange={(e) => this.setState({ query: e.target.value })}
               placeholder="Enter search term..."
             />
-            <button
-              onClick={this.handleInput}
-              className="search-btn"
-              type="button"
-            >
+            <button className="search-btn" type="submit">
               Search
             </button>
           </form>
