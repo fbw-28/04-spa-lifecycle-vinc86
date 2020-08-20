@@ -7,10 +7,10 @@ const UserSearch = ({ users, query }) => {
   );
 
   return (
-    <div>
+    <div >
       {filterUser.map((user) => {
         return (
-          <table>
+          <table >
             <thead>
               <tr>
                 <th>ID</th>

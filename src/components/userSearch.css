@@ -15,6 +15,10 @@ thead {
 
 }
 
+tbody {
+    background: rgb(223, 245, 236);
+}
+
 th {
     font-size: 1.3rem;
 }
